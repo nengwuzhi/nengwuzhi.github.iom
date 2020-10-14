@@ -19,20 +19,20 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 <div class="row remove-site-content-margin">
      <div class="col-md-4">
     <!-- latest post -->
- <ul>
+		<ul>
 		       {% for post in site.categories.blog %}
-						<div class='post'>
+						<li class='post'>
 							{% if post.image %}
 								<a href='{{post.url}}'><img class='post-image' src="{{post.image}}" /></a>
 							{% endif %}
 							<div class="postcontent">
-					<a href='{{post.url}}'><h2 class='post-title'>{{post.title}}</h2></a>
+					<a href='{{post.url}}'><h1 class='post-title'>{{post.title}}</h1></a>
 
 								<div class='post-content'>{{post.summary}}</div>
 							</div>
-						</div>
+						</li>
 					{% endfor %}
-				</ul>	
+				</ul>
     </div>
 
     <div class="col-md-4">
