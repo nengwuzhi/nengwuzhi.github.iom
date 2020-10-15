@@ -145,6 +145,7 @@ body {
 .site-content {
 	margin-top:55px;
 	min-height:400px;
+	margin: 0 125px;
 }
 .remove-site-content-margin {
 	margin-top:-30px;
