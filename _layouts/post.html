@@ -39,7 +39,7 @@ layout: default
 
 
 {% assign author = site.authors[page.author] %}
-<div class="container">
+
 <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
 		<div class="h-100 tofront">
 			<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
@@ -158,7 +158,7 @@ layout: default
       <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
 
         <script>
-            const ct = document.querySelector('.post-content');  //".post-content"指向文章内容所在的div，需根据实际情况修改
+            const ct = document.querySelector('.container');  //".post-content"指向文章内容所在的div，需根据实际情况修改
             scrollnav.init(ct, { 
                 debug: false,
                 easingStyle: 'linear',
