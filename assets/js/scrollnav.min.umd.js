@@ -93,19 +93,5 @@ f.addEventListener("click",y)
 function h(){f.data=w(f.data)
 }
 
-return window.addEventListener("resize",h),h
-}(this),this.settings.debug&&((F=document.createElement("div")).className="snDebugger",F.setAttribute("style","\n      position: sticky;\n      top: 40%;\n      height: 0px;\n      border-bottom:5px solid red;\n      border-top: 5px solid blue;\n      width: 100%;\n      opacity: .5;\n      pointer-events: none;\n    "),document.body.appendChild(F)),this.settings.onInit?this.settings.onInit():void 0;this.settings.debug&&console.error('\n        scrollnav build failed, could not find any "'+this.settings.sections+'"\n        elements inside of "'+h+'"\n      ')
-}
 
-else this.settings.debug&&console.error('\n        scrollnav build failed, options.insertLocation "'+this.settings.insertLocation+'" is not a valid option\n      ');else this.settings.debug&&console.error('\n        scrollnav build failed, options.insertTarget "'+h+'" is not an HTML Element\n      ');else this.settings.debug&&console.error('\n        scrollnav build failed, content argument "'+h+'" is not an HTML Element\n      ')
-},destroy:function(h) {
-if(this.settings=f(this.settings,h),function(f,h){f.querySelectorAll("a").forEach(function(f){f.removeEventListener("click",h)
-})}(this.nav,O),function(f) {
-window.removeEventListener("scroll",f)
-}(x),function(f) {
-window.removeEventListener("resize",f)
-}(j),this.nav.remove(),this.settings.onDestroy)return this.settings.onDestroy()
-},updatePositions:function(h) {
-if(this.settings=f(this.settings,h),this.data=w(this.data),this.settings.onUpdatePositions)return this.settings.onUpdatePositions()
-}}});
 //# sourceMappingURL=scrollnav.min.umd.js.map
