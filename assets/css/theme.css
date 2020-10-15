@@ -2,39 +2,77 @@
  * Mundana Jekyll Theme (https://www.wowthemes.net/mundana-jekyll-theme/)
  */
 
+.scroll-nav {
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  padding: 15px 10px;
+  position: sticky;
+  top: 10px;
+}
 
-.scroll-nav__list, .scroll-nav__sub-list {
+@media screen and (min-width: 700px) {
+  .scroll-nav {
+    float: left;
+    padding: 15px 10px;
+    width: 200px;
+    top: 60px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .scroll-nav {
+    width: 300px;
+  }
+}
+
+.scroll-nav__list {
   margin: 0;
   padding-left: 1.4em;
   list-style-type: none;
-  line-height: 20px;
 }
 
 .scroll-nav__item {
   margin-bottom: 5px;
-  list-style-type: none;
 }
 
-.scroll-nav__item--active > a {
-  //padding: 5px;
-  font-weight: bold;
+.scroll-nav__item--active {
+  font-weight: 600;
   position: relative;
-  color: #000000;
-  //background: $red;
-  text-decoration: none;
-  //transition: 0.5s;
-  &:hover{
-      color:$black
-  }
+}
+
+.scroll-nav__item--active:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: black;
+  position: absolute;
+  left: -20px;
+  top: 2px;
 }
 
 .scroll-nav__link {
-  color: $black;
+  color: #0645ad;
   text-decoration: none;
-  //display: block;
-  //margin: 0 auto;
-  //padding-left: 42px;
 }
+
+.post__article {
+  padding: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .post__article {
+    margin-left: 210px;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .post__article {
+    margin-left: 310px;
+  }
+}
+
 
 .carousel-multi-item {
     margin-bottom: 5rem;
