@@ -30,6 +30,7 @@
   margin: 0;
   padding-left: 1.4em;
   list-style-type: none;
+  font-size: smaller;
 }
 
 .scroll-nav__item {
