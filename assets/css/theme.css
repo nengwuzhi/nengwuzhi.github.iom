@@ -41,14 +41,12 @@
 }
 
 .scroll-nav__item--active:before {
-  content: '';
-  display: block;
-  width: 14px;
-  height: 14px;
-  background: black;
-  position: absolute;
-  left: -20px;
-  top: 2px;
+    border-left: 2px solid #00bfa0;
+    content: '';
+    display: block;
+    height: 1em;
+    left: 0;
+    position: absolute;
 }
 
 .scroll-nav__link {
