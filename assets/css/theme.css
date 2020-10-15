@@ -815,13 +815,6 @@ footer {
 	position:relative;
 }
 
-.sticky-top.sticky-top-offset.text-center {
-    overflow: auto;
-    max-height: 480px;
-}
-.sticky-top-offset {
-	top:60px;
-	font-weight: 340;
 }
 .homefirstpage .main-loop .main-loop-card:nth-child(-n+5) {
 	display:none !important;
