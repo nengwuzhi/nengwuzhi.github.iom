@@ -9,13 +9,15 @@
                {% include menu-header.html %}
             </ul>
 
-<div class="search">
-	<span <i class="search-start"></i>
-    <input type="text" class="search-input" placeholder="搜索..." />
-   <i class="material-icons search-icon search-clear">clear</i>
-	<div class="search-results"></div></span>
-</div>
-	
+  <span id="search-wrapper" class="align-items-center">
+      <i class="fas fa-search fa-fw"></i>
+      <input class="form-control" id="search-input" type="search" placeholder="{{ site.data.label.search_hint }}...">
+      <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i>
+    </span>
+	<span id="search-cancel" >Cancel</span>
+		<div class="search-results"></div> 
+		
+		
 	</div>
     </div>
  </nav>
