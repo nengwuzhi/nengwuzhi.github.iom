@@ -432,6 +432,19 @@ a.text-dark:hover {
  * Simple-Jekyll-Search弹出框
  */
 
+span#search-wrapper {
+    display: flex;
+    width: 95%;
+    width: auto;
+    border-radius: 1rem;
+    border: 1px solid var(--search-wrapper-bg);
+    background: beige;
+    padding: 0 .5rem;
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
 .search {
     position: relative;
     height: 30px;
